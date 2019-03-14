@@ -5,3 +5,6 @@ simple standalone gui for YOLOv3 darknet. This specifically makes use of [darkne
 - Install darknet YOLOv3 for windows ([darknet](https://github.com/AlexeyAB/darknet/))
 - Simple use git clone or direct download and unzip to your preferred directory.
 - run `py_main_gui.exe`
+
+### R01.003
+- added `create *.list` function
