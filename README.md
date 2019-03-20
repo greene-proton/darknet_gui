@@ -25,6 +25,12 @@ simple standalone gui for YOLOv3 darknet. This specifically makes use of [darkne
 
 
 ## Change Log
+### R01.005 (Planned)
+- Create mAP analysis window from main menu. 
+  - This will scan though all .weights file in a folder directory and create a plot for accuracy
+### R01.004
+- Fixed random crashes when pressing buttons (most if not all loop issues)
+- updated `Test` button to `mAP Test`. 
 ### R01.003
 - added `create *.list` function
 
