@@ -4,7 +4,7 @@ simple standalone gui for YOLOv3 darknet. This specifically makes use of [darkne
 ## Install
 - Install darknet YOLOv3 for windows ([darknet](https://github.com/AlexeyAB/darknet/))
 - Add darknet install directory to `PATH`
-  - See steps 1 - 5 in this link: https://docs.telerik.com/teststudio/features/test-runners/add-path-environment-variables
+  - See steps 1 - 5 in this link: [add-path-environment-variables](https://docs.telerik.com/teststudio/features/test-runners/add-path-environment-variables)
 - use `git clone` or direct download, then unzip to preferred directory.
 
 ## Usage
