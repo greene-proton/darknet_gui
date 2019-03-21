@@ -3,6 +3,7 @@ simple standalone gui for YOLOv3 darknet. This specifically makes use of [darkne
 
 ## Install
 - Install darknet YOLOv3 for windows ([darknet](https://github.com/AlexeyAB/darknet/))
+- Add darknet install directory to `PATH`
 - use `git clone` or direct download, then unzip to preferred directory.
 
 ## Usage
