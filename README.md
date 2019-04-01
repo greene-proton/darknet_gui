@@ -15,13 +15,14 @@ simple standalone gui for YOLOv3 darknet. This specifically makes use of [darkne
   darknet.exe detector test cfg/coco.data yolov3.cfg yolov3.weights -ext_output dog.jpg
   ```
 - Use the `Train` button to start dataset with correct directories to `*.data` `*.cfg` and `*.weights` (use `darknet53.conv.74` if new model). See file structure below. 
-- The `create *.list` button assumes the following files structure:
+- The `create *.list` and `Make *.list for pseudo labeling` buttons assumes the following files structure:
 ```
 .../x64/
        /<project workspace>/
                            /data/
                                 /test/(store images and labels for testing)
                                 /train/(store images and labels for training)
+                                /new_train/(store images to be auto labeled by trained model)
 ```
 - `create *.list` looks into your project workspace, under the x64 darknet build, and looks through image file types (.png and .jpg) nested in data/train/ and data/test/ to make `train.list` and `test.list`. This keeps different projects in their seperate workspaces. 
 
