@@ -26,7 +26,6 @@ simple standalone gui for YOLOv3 darknet. This specifically makes use of [darkne
 ```
 - `create *.list` looks into your project workspace, under the x64 darknet build, and looks through image file types (.png and .jpg) nested in data/train/ and data/test/ to make `train.list` and `test.list`. This keeps different projects in their seperate workspaces. 
 
-
 ## Change Log
 ### R01.006 (Planned/Todo List)
 - `mAP analysis` window from main menu. 
@@ -41,4 +40,3 @@ simple standalone gui for YOLOv3 darknet. This specifically makes use of [darkne
 - Fixed some crashes caused by _tkinter.TclError
 ### R01.003
 - added `create *.list` function
-
