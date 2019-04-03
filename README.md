@@ -3,6 +3,8 @@ simple standalone gui for YOLOv3 darknet. This specifically makes use of [darkne
 
 ## Install
 - Install darknet YOLOv3 for windows ([darknet](https://github.com/AlexeyAB/darknet/))
+- Add darknet install directory to `PATH`
+  - See steps 1 - 5 in this link: [add-path-environment-variables](https://docs.telerik.com/teststudio/features/test-runners/add-path-environment-variables)
 - use `git clone` or direct download, then unzip to preferred directory.
 
 ## Usage
@@ -13,26 +15,30 @@ simple standalone gui for YOLOv3 darknet. This specifically makes use of [darkne
   darknet.exe detector test cfg/coco.data yolov3.cfg yolov3.weights -ext_output dog.jpg
   ```
 - Use the `Train` button to start dataset with correct directories to `*.data` `*.cfg` and `*.weights` (use `darknet53.conv.74` if new model). See file structure below. 
-- The `create *.list` button assumes the following files structure:
+- The `create *.list` and `Make *.list for pseudo labeling` buttons assumes the following files structure:
 ```
 .../x64/
        /<project workspace>/
                            /data/
                                 /test/(store images and labels for testing)
                                 /train/(store images and labels for training)
+                                /new_train/(store images to be auto labeled by trained model)
 ```
 - `create *.list` looks into your project workspace, under the x64 darknet build, and looks through image file types (.png and .jpg) nested in data/train/ and data/test/ to make `train.list` and `test.list`. This keeps different projects in their seperate workspaces. 
 
 
 ## Change Log
-### R01.005 (Planned)
-- Create mAP analysis window from main menu. 
-  - This will scan though all .weights file in a folder directory and create a plot for accuracy
+### R01.006 (Planned/Todo List)
+- `mAP analysis` window from main menu. 
+  - Scan though all .weights file in a folder and create a plot for average precision (AP), recall, f-1 score and mean AP (mAP)
+### R01.005
+- Add `Make pseudo label`
+  - populate test folder with `*.txt` labels (this will replace labels already previously saved in that folder) 
 ### R01.004
 - Fixed random crashes when pressing buttons (most if not all loop issues)
 - updated `Test` button to `mAP Test`. 
+- updated `Test /w video` and `Test /w Webcam`
+- Fixed some crashes caused by _tkinter.TclError
 ### R01.003
 - added `create *.list` function
 
-### Known Issues with R01.003
-- `Test` and `Test w/ Video` button needs to be worked on (maybe removed or changed)
