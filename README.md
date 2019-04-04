@@ -31,8 +31,10 @@ simple standalone gui for YOLOv3 darknet. This specifically makes use of [darkne
 - `mAP analysis` window from main menu. 
   - Scan though all .weights file in a folder and create a plot for average precision (AP), recall, f-1 score and mean AP (mAP)
 ### R01.005
-- Add `Make pseudo label`
+- Added `Make pseudo label`
   - populate test folder with `*.txt` labels (this will replace labels already previously saved in that folder) 
+- Added `Test w/ Image` 
+  - Just detection on single image of you choosing 
 ### R01.004
 - Fixed random crashes when pressing buttons (most if not all loop issues)
 - updated `Test` button to `mAP Test`. 
