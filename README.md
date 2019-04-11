@@ -35,6 +35,8 @@ simple standalone gui for YOLOv3 darknet. This specifically makes use of [darkne
   - populate test folder with `*.txt` labels (this will replace labels already previously saved in that folder) 
 - Added `Test w/ Image` 
   - Just detection on single image of you choosing 
+- Added `save video function`
+  - save test demo video as same directory as video as `<test_vid_name>_res.avi`
 ### R01.004
 - Fixed random crashes when pressing buttons (most if not all loop issues)
 - updated `Test` button to `mAP Test`. 
