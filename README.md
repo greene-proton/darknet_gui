@@ -27,9 +27,11 @@ simple standalone gui for YOLOv3 darknet. This specifically makes use of [darkne
 - `create *.list` looks into your project workspace, under the x64 darknet build, and looks through image file types (.png and .jpg) nested in data/train/ and data/test/ to make `train.list` and `test.list`. This keeps different projects in their seperate workspaces. 
 
 ## Change Log
-### R01.006 (Planned/Todo List)
+### R01.010 (Planned/Todo List)
 - `mAP analysis` window from main menu. 
   - Scan though all .weights file in a folder and create a plot for average precision (AP), recall, f-1 score and mean AP (mAP)
+### R01.006 (minor fix)
+- Added caps check for `.jpg` and `.png` in `create list` functions.
 ### R01.005
 - Added `Make pseudo label`
   - populate test folder with `*.txt` labels (this will replace labels already previously saved in that folder) 
