@@ -3,8 +3,10 @@ simple standalone gui for YOLOv3 darknet. This specifically makes use of [darkne
 
 ## Install
 - Install darknet YOLOv3 for windows ([darknet](https://github.com/AlexeyAB/darknet/))
-- Add darknet install directory to `PATH`
-  - See steps 1 - 5 in this link: [add-path-environment-variables](https://docs.telerik.com/teststudio/features/test-runners/add-path-environment-variables)
+- Add darknet install directory to `Path` in System variables
+  - add a new variable under `Path`, where the variable is the path where `./darknet.exe` is installed
+    - This may look something like `C:\darknet\build_win_release\Release` or `C:\dev\_ws\darknet\build\darknet\x64` depending on how you've installed darknet. 
+  - See steps 1 - 5 in this link if you are new to adding paths to system variables: [add-path-environment-variables](https://docs.telerik.com/teststudio/features/test-runners/add-path-environment-variables)
 - use `git clone` or direct download, then unzip to preferred directory.
 
 ## Usage
