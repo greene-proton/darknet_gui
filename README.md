@@ -26,7 +26,7 @@ simple standalone gui for YOLOv3 darknet. This specifically makes use of [darkne
                                 /train/(store images and labels for training)
                                 /new_train/(store images to be auto labeled by trained model)
 ```
-- `create *.list` looks into your project workspace, under the x64 darknet build, and looks through image file types (.png and .jpg) nested in data/train/ and data/test/ to make `train.list` and `test.list`. This keeps different projects in their seperate workspaces. 
+- `create *.list` looks into your project workspace, under the x64 darknet build, and looks through image file types (.png and .jpg) nested in data/train/ and data/test/ to make `train.list` and `test.list`. 
 
 ## Change Log
 ### R01.010 (Planned/Todo List)
